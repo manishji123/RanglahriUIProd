@@ -1,0 +1,59 @@
+.cuspRasis{ 
+	display: block; 
+	width: 100%
+}
+.cuspRasis-R{ 
+ 	 color: blue; 
+}
+.cuspRasis-R-Pla{ 
+	font-weight: bold;
+}
+.cuspRasis-R-Ras{ 
+}
+.cuspRasis-R-Per{ 
+}
+.cuspRasis-NR {
+}
+.cuspRasis-NR-Pla{ 
+	font-weight: bold;
+}
+.cuspRasis-NR-Ras{ 
+}
+.cuspRasis-NR-Per{ 
+}
+.cuspNaks{  
+	 width: 100%
+}
+.cuspNaks-R{ 
+ 	 color: blue; 
+	 width: 100%
+}
+.cuspNaks-R-Pla{ 
+	.text-align: left;
+	font-weight: bold;
+	width: 12.5%;	
+}
+.cuspNaks-R-Nak{ 
+	.text-align: right;
+	width: 50%;	
+}
+.cuspNaks-R-Per{ 
+	.text-align: right;
+	width: 37.5%;		
+}
+.cuspNaks-NR {
+	width: 100%;
+}
+.cuspNaks-NR-Pla{ 
+	.text-align: left;
+	font-weight: bold;	
+	width: 12.5%;
+}
+.cuspNaks-NR-Nak{ 
+	.text-align: right;
+	width: 50%;
+}
+.cuspNaks-NR-Per{ 
+	.text-align: right;
+	width: 37.5%;	
+}

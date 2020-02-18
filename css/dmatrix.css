@@ -1,0 +1,41 @@
+.dmatrix-table{ 
+	border: 2px solid #aaa;
+}
+.dmatrix-table td{ 
+	border: 1px dashed #aaa;
+}
+.dmatrix-table tr{ 
+	border: 1px dashed #aaa;
+}
+.dmatrix-table .dmatrix-row-header{
+	background-color: #F0F0F0;
+	border-bottom: 2px solid #aaa;
+}
+.dmatrix-table .dmatrix-colblock-header{
+	border-right: 2px solid #aaa;
+	background-color: #F0F0F0;
+}
+.dmatrix-table .dmatrix-header-text{
+	font-weight: bold;
+	color: #585858;
+	text-align: center;
+}
+.dmatrix-table .dmatrix-rowblock-any-row-last{ 
+	border-bottom: 2px solid #aaa;
+}
+
+.dmatrix-table .dmatrix-colblock-any-col-last{ 
+	border-right: 2px solid #aaa;
+}
+
+.dmatrix-colblock-any-col-first{
+	font-weight: bold;
+	color: grey;
+}
+
+.dmatrix-planet-fullname-class{
+	font-weight: bold;
+	color: blue;
+}
+
+
