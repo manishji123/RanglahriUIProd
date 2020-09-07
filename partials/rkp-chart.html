@@ -1,22 +1,24 @@
 <div id="birthChartTopLevelDiv">
 	<div class="w-100 py-1">
 		<div class="w-100" id="birthChartFormDiv-Outer">
-			<button class="rkp-accordion" target-id="birthChartFormDiv" target-initial-display="show" >
+			<button class="rkp-accordion" target-id="birthChartFormDiv"
+				target-initial-display="show">
 				<strong>Create/Edit Horoscope</strong>
 			</button>
 			<div id="birthChartFormDiv" class="py-2 m-0 px-0">
 				<div class="px-2 py-1">
 					<div class="px-2 py-1">
-			   			<span>
-			   				<input type="file" valid-file upload="readBirthChartParametersFile(file)" ng-model="file" class="btn btn-outline-secondary"/>
-			   			</span>
-			   			<span class="px-1">
-							<button type="submit" ng-click="saveBirthChartRkpFile()" class="btn btn-secondary btn-md">Save</button>
+						<span> <input type="file" valid-file
+							upload="readBirthChartParametersFile(file)" ng-model="file"
+							class="btn btn-outline-secondary" />
+						</span> <span class="px-1">
+							<button type="submit" ng-click="saveBirthChartRkpFile()"
+								class="btn btn-secondary btn-md">Save</button>
 						</span>
 					</div>
-					
+
 					<div class="px-2 py-1">
-							<div id="birthChartFormFieldsDiv"></div>
+						<div id="birthChartFormFieldsDiv"></div>
 					</div>
 				</div>
 			</div>
@@ -30,12 +32,13 @@
 			<div id="rkp_charts" class="rkp_charts px-3 py-1">
 				<div class="w-100 py-1">
 					<div class="w-100 border border-info py-1 px-0">
-						<div id="birthChartPanchangDetailDiv" class="birthChartPanchangDetailDiv"/>
+						<div id="birthChartPanchangDetailDiv"
+							class="birthChartPanchangDetailDiv" />
 					</div>
 				</div>
 				<div class="w-100 py-1">
 					<div class="w-100 border border-info py-1 px-0">
-						<div id="birthChartRotationDiv" class="birthChartRotationDiv"/>
+						<div id="birthChartRotationDiv" class="birthChartRotationDiv" />
 					</div>
 				</div>
 				<div class="w-100 py-1">
@@ -43,7 +46,7 @@
 						<button class="rkp-accordion" target-id="kp_charts">
 							<strong>Main Charts</strong>
 						</button>
-						<div id="kp_charts" class="kp_charts"/>
+						<div id="kp_charts" class="kp_charts" />
 					</div>
 				</div>
 				<div class="w-100 py-1">
@@ -51,7 +54,7 @@
 						<button class="rkp-accordion" target-id="divisional_charts">
 							<strong>Divisional(Varga) Charts</strong>
 						</button>
-						<div id="divisional_charts" class="divisional_charts"/>
+						<div id="divisional_charts" class="divisional_charts" />
 					</div>
 				</div>
 				<div class="w-100 py-1">
@@ -60,7 +63,7 @@
 							<strong>Cusps(Houses)</strong>
 						</button>
 						<div>
-							<div id="cusps_data" class="cusps_data"/>
+							<div id="cusps_data" class="cusps_data" />
 						</div>
 					</div>
 				</div>
@@ -69,50 +72,51 @@
 						<button class="rkp-accordion" target-id="planet_data">
 							<strong>Planets</strong>
 						</button>
-						<div id="planet_data" class="planet_data" />						
+						<div id="planet_data" class="planet_data" />
 					</div>
 				</div>
-				<div class="w-100 py-1">	
+				<div class="w-100 py-1">
 					<div class="w-100" id="dmatrix_data-Outer">
 						<button class="rkp-accordion" target-id="dmatrix_data">
 							<strong>Destiny Matrix</strong>
 						</button>
-						<div id="dmatrix_data" class="dmatrix_data" />						
+						<div id="dmatrix_data" class="dmatrix_data" />
 					</div>
-				</div>	
-				<div class="w-100 py-1">	
+				</div>
+				<div class="w-100 py-1">
 					<div class="w-100" id="birthChartDasa-Outer">
 						<button class="rkp-accordion" target-id="birthChartDasa">
 							<strong>Vimsottari Dasa</strong>
 						</button>
-						<div id="birthChartDasa" class="dmatrix_data">	
+						<div id="birthChartDasa" class="dmatrix_data">
 							<table class="align-top m-0 p-1 float-left w-100">
-								<tr> 
+								<tr>
 									<td class="align-top m-1 p-1 float-left w-60">
 										<div class="align-top mr-1 float-left p-0 w-20">
 											<div id="mahadasas_data" class="mahadasas_data" />
 										</div>
 										<div class="align-top ml-1 float-left w-80">
-											<div id="internaldasas_data" class="internaldasas_data"/>
-										</div>			
+											<div id="internaldasas_data" class="internaldasas_data" />
+										</div>
 									</td>
 									<td class="px-3 align-top m-1 p-2 float-left w-40">
 										<table>
 											<tr>
-												<td class="align-top m-0 p-0">
-													<strong><u>Dasa Transit</u> : {{dasaTransitDT}}</strong>
-												</td>
+												<td class="align-top m-0 p-0"><strong><u>Dasa
+															Transit</u> : {{dasaTransitDT}}</strong></td>
 											</tr>
 											<tr>
 												<td class="align-top m-0 py-1 float-left">
-													<div id="dasa_trasit_data" class="dasa_trasit_data float-left"/>				
+													<div id="dasa_trasit_data"
+														class="dasa_trasit_data float-left" />
 												</td>
 											</tr>
 											<tr>
 												<td class="m-0 py-1 float-left">
-													<button ng-show="dasaTransitDT" type="submit" ng-click="getNativeTransitFromDasa()" class="btn btn-outline-primary">
-														Detailed Transit - {{dasaTransitDT}}
-													</button>				
+													<button ng-show="dasaTransitDT" type="submit"
+														ng-click="getNativeTransitFromDasa()"
+														class="btn btn-outline-primary">Detailed Transit
+														- {{dasaTransitDT}}</button>
 												</td>
 											</tr>
 										</table>
@@ -128,15 +132,16 @@
 </div>
 <div class="m-0 p-0" id="transitChartTopLevelDiv">
 	<div class="w-100 py-0" id="transitChart-Outer">
-		<button class="rkp-accordion" target-id="transitChart" target-initial-display="show">
+		<button class="rkp-accordion" target-id="transitChart"
+			target-initial-display="show">
 			<strong>Transit(Gochar)</strong>
 		</button>
 		<div class="px-3 py-0" id="transitChart">
 			<div class="w-100 py-1">
 				<div class="w-100" id="transitChartFormDiv-Outer">
-					<button class="rkp-accordion" target-id="transitChartFormDiv" target-initial-display="show" >
-						{{horoscopeCreated ? 'Get Transit for Your Horoscope' : 'Get Planetary Positions'}}
-					</button>
+					<button class="rkp-accordion" target-id="transitChartFormDiv"
+						target-initial-display="show">{{horoscopeCreated ? 'Get
+						Transit for Your Horoscope' : 'Get Planetary Positions'}}</button>
 					<div class="w-100 m-0 px-3 py-3" id="transitChartFormDiv">
 						<div id="transitFormFields"></div>
 					</div>
@@ -145,30 +150,27 @@
 			<div class="w-100 py-1">
 				<div class="w-100" id="transit_planet_data-Outer">
 					<button class="rkp-accordion" target-id="transit_planet_data">
-						Planets
-					</button>
-					<div id="transit_planet_data" class="transit_planet_data" />	
-				</div>					
+						Planets</button>
+					<div id="transit_planet_data" class="transit_planet_data" />
+				</div>
 			</div>
-			
+
 			<div class="w-100 py-1">
 				<div class="w-100" id="transit_dmatrix-Outer">
 					<button class="rkp-accordion" target-id="transit_dmatrix">
-						Destiny Matrix
-					</button>
-					<div id="transit_dmatrix" class="transit_dmatrix" />	
-				</div>					
+						Destiny Matrix</button>
+					<div id="transit_dmatrix" class="transit_dmatrix" />
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
 <script>
-	initializeAccordians("birthChartTopLevelDiv");
-	initializeAccordians("transitChartTopLevelDiv");
+	initializeAccordians("birthChartTopLevelDiv", "chart-page");
+	initializeAccordians("transitChartTopLevelDiv", "chart-page");
 </script>
-<div class="w-100 py-1">
-</div>
+<div class="w-100 py-1"></div>
 
-	
+
 
 
