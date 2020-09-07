@@ -1,7 +1,6 @@
 .rkp-tutorial-heading {
 	color: #5e9ca0;
 	font-weight: bold;
-	text-decoration: underline blue;
 }
 
 .rkp-tutorial-text {
@@ -10,8 +9,4 @@
 
 .rkp-tutorial-text-highlighted {
 	background-color: #ffff00;
-}
-
-.rkp-tutorial-heading-highlighted {
-	background-color: #eee;
 }
