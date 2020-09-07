@@ -2,78 +2,104 @@
 <html ng-app="rkpApp">
 <head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119124476-2"></script>
+<script async
+	src="https://www.googletagmanager.com/gtag/js?id=UA-119124476-2"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	window.dataLayer = window.dataLayer || [];
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag('js', new Date());
 
-  gtag('config', 'UA-119124476-2');
+	gtag('config', 'UA-119124476-2');
 </script>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <base href="/"> -->
-  <title>Ranglahri Astro</title>
-  <!-- Latest compiled and minified CSS -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <base href="/"> -->
+<title>Ranglahri Astro</title>
+<!-- Latest compiled and minified CSS -->
 
-  <link rel="stylesheet" href="public/fonts.google.family-Josefin-Sans.css" >
-  <link rel="stylesheet" href="public/bootstrap/4.4.1/bootstrap.min.css">
-  <link rel="stylesheet" href="public/tabulator-tables/4.5/tabulator.min.css">
-  
-  <script src="public/jquery/3.4.1/jquery.min.js"></script>
-  <script src="public/bootstrap/4.4.1/bootstrap.bundle.min.js"></script>
-  <script src="public/tabulator-tables/4.5/tabulator.min.js"></script>
-  <script src="public/angular/1.7.8/angular.min.js"></script>
-  <script src="public/angular/1.7.8/angular-route.min.js" charset="utf-8"></script>
-  
-  <script src="js/rkpastrochart.min.js"></script>
-  
-  <!--  -->
-  <style media="screen">
-    font-family: 'Josefin Sans', sans-serif;
-    h1, h2, h3, h4, h5, h6 {
-        font-family: 'Josefin Sans';
-    }
+<link rel="stylesheet"
+	href="public/fonts.google.family-Josefin-Sans.css">
+<!-- <link rel="stylesheet" href="public/bootstrap/4.3.1/bootstrap.min.css"> -->
+<link rel="stylesheet" href="public/bootstrap/4.4.1/bootstrap.min.css">
 
-    p, div {
-        font-family: 'Josefin Sans';
-    }
-    .original-price {
-    	font-size: 1.5rem;
-    	text-decoration:line-through;
-    	margin: 0;
-    }
-    .price {
-        color: #009933;
-        font-weight: bold;
-        font-size: 16px;
-    }
-  </style>
+<!-- <link rel="stylesheet" href="public/tabulator-tables/4.4.1/tabulator.min.css"> -->
+<link rel="stylesheet"
+	href="public/tabulator-tables/4.8/tabulator.min.css">
+
+<script src="public/jquery/3.4.1/jquery.min.js"></script>
+<!-- <script src="public/bootstrap/4.3.1/bootstrap.bundle.min.js"></script> -->
+<script src="public/bootstrap/4.4.1/bootstrap.bundle.min.js"></script>
+<!-- <script src="public/tabulator-tables/4.4.1/tabulator.min.js"></script> -->
+<script src="public/tabulator-tables/4.8/tabulator.min.js"></script>
+
+<script src="public/angular/1.8.0/angular.min.js"></script>
+<script src="public/angular/1.8.0/angular-route.min.js" charset="utf-8"></script>
+
+<script src="js/astrochart/aspect.js"></script>
+<script src="js/astrochart/chart.js"></script>
+<script src="js/astrochart/radix.js"></script>
+<script src="js/astrochart/settings.js"></script>
+<script src="js/astrochart/svg.js"></script>
+<script src="js/astrochart/transit.js"></script>
+<script src="js/astrochart/utils.js"></script>
+<script src="js/astrochart/zodiac.js"></script>
+<script src="js/astrochart/animator.js"></script>
+<script src="js/astrochart/timer.js"></script>
+
+<!--  -->
+<style media="screen">
+font-family: 'Josefin Sans ', sans-serif ; h1, h2, h3, h4, h5, h6 {
+	font-family: 'Josefin Sans';
+}
+
+p, div {
+	font-family: 'Josefin Sans';
+}
+
+.original-price {
+	font-size: 1.5rem;
+	text-decoration: line-through;
+	margin: 0;
+}
+
+.price {
+	color: #009933;
+	font-weight: bold;
+	font-size: 16px;
+}
+</style>
 
 </head>
 <body data-spy="scroll" data-target="#navbar-site" data-offset="60">
 
-  <style>
-    body {
-      position: relative;
-      padding-top: 60px;
-    }
-  </style>
+	<style>
+body {
+	position: relative;
+	padding-top: 60px;
+}
+</style>
 
-<nav id="navbar-site" class="fixed-top navbar navbar-dark bg-primary navbar-expand-sm">
-  <div class="container">
-	<div class="navbar-header">
-       <a class="navbar-brand" href="#/rkp-chart"><b>Ranglahri Astro</b></a>
-    </div>
-    <ul class="navbar-nav">
-       <li class="nav-item"><a class="nav-link" href="#/rkp-home">Home</a></li>
-       <li class="nav-item"><a class="nav-link" href="#/rkp-chart">Create Chart</a></li>
-    </ul><!-- navbar-nav -->
-  </div><!-- container -->
-</nav>  
+	<nav id="navbar-site"
+		class="fixed-top navbar navbar-dark bg-primary navbar-expand-sm">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#/rkp-chart"><b>Ranglahri
+						Astro</b></a>
+			</div>
+			<ul class="navbar-nav">
+				<li class="nav-item"><a class="nav-link" href="#/rkp-home">Home</a></li>
+				<li class="nav-item"><a class="nav-link" href="#/rkp-chart">Create
+						Chart</a></li>
+			</ul>
+			<!-- navbar-nav -->
+		</div>
+		<!-- container -->
+	</nav>
 
-  
-  <div class="px-0 container w-100" ng-view> </div>
+
+	<div class="px-0 container w-100" ng-view></div>
 </body>
 <!-- AngularJS App Code ==================================================== -->
 
@@ -84,7 +110,6 @@
 <link rel="stylesheet" href="css/rkp-chart-form.css">
 
 <script src="js/rkpjs.min.js" charset="utf-8"></script>
-
 
 
 </html>
