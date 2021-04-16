@@ -66,7 +66,7 @@
 							<div id="cusps_data" class="cusps_data" />
 						</div>
 					</div>
-				</div> -->			
+				</div> -->
 				<!-- <div class="w-100 py-1">
 					<div class="w-100" id="planet_data-Outer">
 						<button class="rkp-accordion" target-id="planet_data">
@@ -82,8 +82,8 @@
 						</button>
 						<div id="dmatrix_data" class="dmatrix_data" />
 					</div>
-				</div>				
-				
+				</div>
+
 				<div class="w-100 py-1">
 					<div class="w-100" id="birthChartDasa-Outer">
 						<button class="rkp-accordion" target-id="birthChartDasa">
@@ -92,32 +92,53 @@
 						<div id="birthChartDasa" class="dmatrix_data">
 							<table class="align-top m-0 p-1 float-left w-100">
 								<tr>
-									<td class="align-top m-1 p-1 float-left w-60">
-										<div class="align-top mr-1 float-left p-0 w-20">
-											<div id="mahadasas_data" class="mahadasas_data" />
-										</div>
-										<div class="align-top ml-1 float-left w-80">
-											<div id="internaldasas_data" class="internaldasas_data" />
-										</div>
-									</td>
-									<td class="px-3 align-top m-1 p-2 float-left w-40">
+									<td>
 										<table>
 											<tr>
-												<td class="align-top m-0 p-0"><strong><u>Dasa
-															Transit</u> : {{dasaTransitDT}}</strong></td>
-											</tr>
-											<tr>
-												<td class="align-top m-0 py-1 float-left">
-													<div id="dasa_trasit_data"
-														class="dasa_trasit_data float-left" />
+												<td class="align-top m-1 p-1 float-left w-60">
+													<div class="align-top mr-1 float-left p-0 w-20">
+														<div id="mahadasas_data" class="mahadasas_data" />
+													</div>
+													<div class="align-top ml-1 float-left w-80">
+														<div id="internaldasas_data" class="internaldasas_data" />
+													</div>
 												</td>
 											</tr>
 											<tr>
-												<td class="m-0 py-1 float-left">
-													<button ng-show="dasaTransitDT" type="submit"
-														ng-click="getNativeTransitFromDasa()"
-														class="btn btn-outline-primary">Detailed Transit
-														- {{dasaTransitDT}}</button>
+												<td>
+													<table>
+														<tr>
+															<td class="align-top m-1 px-1 pt-1"><strong><u>Dasa
+																		Transit</u> : {{dasaTransitDT}}</strong></td>
+														</tr>
+														<tr>
+															<td class="align-top m-1 px-1 py-0 float-left">
+																<div id="dasa_trasit_data"
+																	class="dasa_trasit_data float-left" />
+															</td>
+														</tr>
+														<tr>
+															<td class="m-1 px-1 float-left">
+																<button ng-show="dasaTransitDT" type="submit"
+																	ng-click="getNativeTransitFromDasa()"
+																	class="btn btn-outline-primary">Detailed
+																	Transit - {{dasaTransitDT}}</button>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+									<td class="align-top m-1 px-1 py-0 float-left">
+										<table>
+											<tr>
+												<td class="align-top m-1 px-1 pt-1 float-left"><strong><u>Dasa
+															Transit</u> : {{dasaTransitDT}}</strong></td>
+											</tr>
+											<tr>
+												<td class="align-top m-1 px-1 py-0 float-left">
+													<div id="dasa_trasit_charts" class="dasa_trasit_charts" />
 												</td>
 											</tr>
 										</table>
