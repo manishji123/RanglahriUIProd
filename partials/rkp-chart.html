@@ -116,18 +116,11 @@
 				</div>
 			</div>
 			<div class="w-100 py-1">
-				<div class="w-100" id="transit_planet_data-Outer">
-					<button class="rkp-accordion" target-id="transit_planet_data">
-						Planets</button>
-					<div id="transit_planet_data" class="transit_planet_data" />
-				</div>
-			</div>
-
-			<div class="w-100 py-1">
-				<div class="w-100" id="transit_dmatrix-Outer">
-					<button class="rkp-accordion" target-id="transit_dmatrix">
-						Destiny Matrix</button>
-					<div id="transit_dmatrix" class="transit_dmatrix" />
+				<div class="w-100" id="transit_data-Outer">
+					<button class="rkp-accordion" target-id="transit_data">Transit Data :
+					{{transit.dateToDisplay ? transit.dateToDisplay : ''}}
+						</button>
+					<div id="transit_data" class="transit_data" />
 				</div>
 			</div>
 		</div>
