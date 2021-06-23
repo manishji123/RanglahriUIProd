@@ -8,6 +8,10 @@
 			<div id="birthChartFormDiv" class="py-2 m-0 px-0">
 				<div class="px-2 py-1">
 					<div class="px-2 py-1">
+						<span class="pr-3">
+							<button type="submit" ng-click="createMomentChart()"
+								class="btn btn-success btn-sm">Local Moment's Chart</button>
+						</span>
 						<span> <input type="file" valid-file
 							upload="readBirthChartParametersFile(file)" ng-model="file"
 							class="btn btn-outline-secondary" />
@@ -18,7 +22,6 @@
 							id="fileDownloadCheckbox" ng-model="fileDownloadCheck"> <label
 							for="fileDownloadCheckbox">Download as Jhora file</label>
 						</span>
-
 					</div>
 					<div class="px-2 py-1">
 						<div id="birthChartFormFieldsDiv"></div>
