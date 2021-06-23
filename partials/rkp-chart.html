@@ -12,11 +12,14 @@
 							upload="readBirthChartParametersFile(file)" ng-model="file"
 							class="btn btn-outline-secondary" />
 						</span> <span class="px-1">
-							<button type="submit" ng-click="saveBirthChartRkpFile()"
+							<button type="submit" ng-click="saveBirthChartFile()"
 								class="btn btn-secondary btn-md">Save</button>
+						</span> <span class="p-0 m-0"> <input type="checkbox"
+							id="fileDownloadCheckbox" ng-model="fileDownloadCheck"> <label
+							for="fileDownloadCheckbox">Download as Jhora file</label>
 						</span>
-					</div>
 
+					</div>
 					<div class="px-2 py-1">
 						<div id="birthChartFormFieldsDiv"></div>
 					</div>
@@ -54,7 +57,8 @@
 						<button class="rkp-accordion" target-id="divisional_charts">
 							<strong>Divisional(Varga) Charts</strong>
 						</button>
-						<div id="divisional_charts" class="divisional_charts overflow-auto" />
+						<div id="divisional_charts"
+							class="divisional_charts overflow-auto" />
 					</div>
 				</div>
 				<div class="w-100 py-1">
@@ -117,9 +121,8 @@
 			</div>
 			<div class="w-100 py-1">
 				<div class="w-100" id="transit_data-Outer">
-					<button class="rkp-accordion" target-id="transit_data">Transit Data :
-					{{transit.dateToDisplay ? transit.dateToDisplay : ''}}
-						</button>
+					<button class="rkp-accordion" target-id="transit_data">Transit
+						Data : {{transit.dateToDisplay ? transit.dateToDisplay : ''}}</button>
 					<div id="transit_data" class="transit_data" />
 				</div>
 			</div>
