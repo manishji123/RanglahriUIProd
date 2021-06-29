@@ -22,24 +22,34 @@
 <link rel="stylesheet" href="public/fontawesome-free-5.14.0/css/all.css">
 <link rel="stylesheet"
 	href="public/fonts.google.family-Josefin-Sans.css">
-<!-- <link rel="stylesheet" href="public/bootstrap/4.3.1/bootstrap.min.css"> -->
 <link rel="stylesheet" href="public/bootstrap/4.4.1/bootstrap.min.css">
+<script src="public/jquery/3.4.1/jquery.min.js"></script>
+<script src="public/bootstrap/4.4.1/bootstrap.bundle.min.js"></script>
 
-<!-- <link rel="stylesheet" href="public/tabulator-tables/4.4.1/tabulator.min.css"> -->
 <link rel="stylesheet"
 	href="public/tabulator-tables/4.8/tabulator.min.css">
-
-<script src="public/jquery/3.4.1/jquery.min.js"></script>
-<!-- <script src="public/bootstrap/4.3.1/bootstrap.bundle.min.js"></script> -->
-<script src="public/bootstrap/4.4.1/bootstrap.bundle.min.js"></script>
-<!-- <script src="public/tabulator-tables/4.4.1/tabulator.min.js"></script> -->
 <script src="public/tabulator-tables/4.8/tabulator.min.js"></script>
 
 <script src="public/angular/1.8.0/angular.min.js"></script>
 <script src="public/angular/1.8.0/angular-route.min.js" charset="utf-8"></script>
 
-<!--  -->
-<style media="screen">
+<script src="js/astrochart/aspect.js"></script>
+<script src="js/astrochart/chart.js"></script>
+<script src="js/astrochart/radix.js"></script>
+<script src="js/astrochart/settings.js"></script>
+<script src="js/astrochart/svg.js"></script>
+<script src="js/astrochart/transit.js"></script>
+<script src="js/astrochart/utils.js"></script>
+<script src="js/astrochart/zodiac.js"></script>
+<script src="js/astrochart/animator.js"></script>
+<script src="js/astrochart/timer.js"></script>
+
+
+
+</head>
+<body data-spy="scroll" data-target="#navbar-site" data-offset="60">
+	<!--  -->
+	<style media="screen">
 font-family: 'Josefin Sans ', sans-serif ; h1, h2, h3, h4, h5, h6 {
 	font-family: 'Josefin Sans';
 }
@@ -60,10 +70,6 @@ p, div {
 	font-size: 16px;
 }
 </style>
-
-</head>
-<body data-spy="scroll" data-target="#navbar-site" data-offset="60">
-
 	<style>
 body {
 	position: relative;
@@ -71,6 +77,8 @@ body {
 }
 </style>
 
+<!-- 
+ -->
 	<nav id="navbar-site"
 		class="fixed-top navbar navbar-dark bg-primary navbar-expand-sm">
 		<div class="container">
@@ -80,16 +88,13 @@ body {
 			</div>
 			<ul class="navbar-nav">
 				<li class="nav-item"><a class="nav-link" href="#/rkp-home">Home</a></li>
-				<li class="nav-item"><a class="nav-link" href="#/rkp-chart">Create
-						Chart</a></li>
+				<li class="nav-item"><a class="nav-link" href="#/rkp-chart">Create Chart</a></li>
 			</ul>
-			<!-- navbar-nav -->
 		</div>
-		<!-- container -->
 	</nav>
 
 
-	<div class="px-0 container w-100" ng-view></div>
+	<div class="px-1 py-0 m-0  w-100" ng-view></div>
 </body>
 <!-- AngularJS App Code ==================================================== -->
 
@@ -99,10 +104,29 @@ body {
 <link rel="stylesheet" href="css/rkp-accordion.css">
 <link rel="stylesheet" href="css/rkp-chart-form.css">
 
-<script src="js/rkpjs.min.js" charset="utf-8"></script>
-<script src="js/rkpastrochart.min.js" charset="utf-8"></script>
+<script src="js/components/rkp-util.js"></script>
+<script src="js/components/rkp-accordian.js"></script>
+<script src="js/components/rkp-initial-data.js" charset="utf-8"></script>
+<script src="js/components/rkp-context-path.js" charset="utf-8"></script>
+<script src="js/components/rkp-app-module.js" charset="utf-8"></script>
+<script src="js/components/rkp-controller.js" charset="utf-8"></script>
+<script src="js/components/rkp-controller-helper.js" charset="utf-8"></script>
+<script src="js/components/rkp-service.js" charset="utf-8"></script>
+<script src="js/components/rkp-planet-table.js"></script>
+<script src="js/components/rkp-planet.js"></script>
+<script src="js/components/rkp-nakshatra.js"></script>
+<script src="js/components/rkp-cusp-table.js"></script>
+<script src="js/components/rkp-dasa-table.js"></script>
+<script src="js/components/rkp-dmatrix-table.js"></script>
+<script src="js/components/rkp-birthchart.js"></script>
+<script src="js/components/rkp-chart-file.js"></script>
+<script src="js/components/rkp-component-chart-form.js"></script>
+<script src="js/components/rkp-directive.js"></script>
+<script src="js/components/rkp-traditional-charts.js"></script>
+<script src="js/components/rkp-birthchart-rotation.js"></script>
+<script src="js/components/rkp-basic-detail-div.js"></script>
+<script src="js/components/rkp-validation.js"></script>
+<script src="js/local-context-path.js" charset="utf-8"></script>
 
-<!-- <script src="js/local-context-path.js" charset="utf-8"></script> -->
 
 </html>
-
