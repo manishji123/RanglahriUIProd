@@ -10,7 +10,7 @@
 					<div class="px-2 py-1">
 						<span class="pr-3">
 							<button type="submit" ng-click="createMomentChart()"
-								class="btn btn-success btn-sm">Local Moment's Chart</button>
+								class="btn btn-success btn-md">Local Moment's Chart</button>
 						</span>
 						<span> <input type="file" valid-file
 							upload="readBirthChartParametersFile(file)" ng-model="file"
@@ -55,6 +55,66 @@
 						<div id="kp_charts" class="kp_charts" />
 					</div>
 				</div>
+
+				<div class="w-100 py-1">
+					<div class="w-100" id="birthChartDasa-Outer">
+						<button class="rkp-accordion" target-id="birthChartDasa">
+							<strong>Planets Dasa</strong>
+						</button>
+						<div id="birthChartDasa" class="overflow-auto">
+							<table class="align-top m-0 p-1 float-left w-100">
+								<tr>
+									<td class="border">
+										<table>
+											<tr>
+												<div class="align-top mr-1 float-left p-0 w-30">
+													<div id="mahadasas_data" class="mahadasas_data" />
+												</div>
+												<div class="align-top mr-1 float-left p-0 w-10">
+													&nbsp;</div>
+
+												<div class="align-top ml-1 float-left w-60">
+													<div id="internaldasas_data" class="internaldasas_data" />
+												</div>
+												
+												<div class="align-top mr-1 float-left p-0 w-30">
+													<div id="naisargikPlanetdasas_data" class="naisargikPlanetdasas_data" />
+												</div>
+												<div class="align-top mr-1 float-left p-0 w-10">
+													&nbsp;</div>
+
+												<div class="align-top ml-1 float-left w-60">
+													<div id="naisargikPlanetInternaldasas_data" class="naisargikPlanetInternaldasas_data" />
+												</div>
+												
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<!-- 
+								<tr>
+									<td class="border">
+										<table>
+											<tr>
+												<div class="align-top mr-1 float-left p-0 w-30">
+													<div id="naisargikPlanetdasas_data" class="naisargikPlanetdasas_data" />
+												</div>
+												<div class="align-top mr-1 float-left p-0 w-10">
+													&nbsp;</div>
+
+												<div class="align-top ml-1 float-left w-60">
+													<div id="naisargikPlanetInternaldasas_data" class="naisargikPlanetInternaldasas_data" />
+												</div>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								 -->
+								
+							</table>
+						</div>
+					</div>
+				</div>
 				<div class="w-100 py-1">
 					<div class="w-100 p-0 m-0" id="divisional_charts-Outer">
 						<button class="rkp-accordion" target-id="divisional_charts">
@@ -72,35 +132,7 @@
 						<div id="dmatrix_data" class="dmatrix_data" />
 					</div>
 				</div>
-
-				<div class="w-100 py-1">
-					<div class="w-100" id="birthChartDasa-Outer">
-						<button class="rkp-accordion" target-id="birthChartDasa">
-							<strong>Vimsottari Dasa</strong>
-						</button>
-						<div id="birthChartDasa" class="overflow-auto">
-							<table class="align-top m-0 p-1 float-left w-100">
-								<tr>
-									<td class="border">
-										<table>
-											<tr>
-												<div class="align-top mr-1 float-left p-0 w-30">
-													<div id="mahadasas_data" class="mahadasas_data" />
-												</div>
-												<div class="align-top mr-1 float-left p-0 w-10">
-													&nbsp;</div>
-
-												<div class="align-top ml-1 float-left w-60">
-													<div id="internaldasas_data" class="internaldasas_data" />
-												</div>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-						</div>
-					</div>
-				</div>
+				
 			</div>
 		</div>
 	</div>
